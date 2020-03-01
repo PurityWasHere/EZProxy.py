@@ -1,5 +1,13 @@
 # EzProxyLib
-A very easy way to load and select proxies.
+A very easy way to load and select proxies. 
+
+Example for Http Proxies.: 
+```python
+    from lib import EZProxyLib
+    GrabProxiesHTTP('proxies.txt')
+    RefreshProxy()
+    requests.post('https://Example.com',proxies = http)
+```
 
 Quick Usage:
 
