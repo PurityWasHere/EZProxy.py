@@ -1,3 +1,4 @@
+import requests
 '''
 EZProxyLib is a Easy to Use Proxy loading lib for easily loading Http/Https Proxies, Aswell as Socks4/Socks5 Proxies.
 
@@ -85,4 +86,3 @@ def RefreshProxy():
         return socks5
     except:
         print('Error Refreshing Proxies. Did you run GrabProxies<Type> Before running this?')
-
