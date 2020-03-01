@@ -1,4 +1,3 @@
-import requests
 '''
 EZProxyLib is a Easy to Use Proxy loading lib for easily loading Http/Https Proxies, Aswell as Socks4/Socks5 Proxies.
 
@@ -35,7 +34,7 @@ def GrabProxiesHTTP(ProxyPath):
         return proxyCount
         return proxies
     except:
-        print('Error Loading Proxies. Is proxies.txt in the local Directory?')
+        print('Error Loading Proxies. Is your proxy path correct?')
 
 def GrabProxiesSOCKS4(ProxyPath):
     try:
@@ -50,7 +49,7 @@ def GrabProxiesSOCKS4(ProxyPath):
         return proxyCount
         return proxies
     except:
-        print('Error Loading Proxies. Is proxies.txt in the local Directory?')
+        print('Error Loading Proxies. Is your proxy path correct?')
 
 def GrabProxiesSOCKS5(ProxyPath):
     try:
@@ -65,7 +64,7 @@ def GrabProxiesSOCKS5(ProxyPath):
         return proxyCount
         return proxies
     except:
-        print('Error Loading Proxies. Is proxies.txt in the local Directory?')
+        print('Error Loading Proxies. Is your proxy path correct?')
 
 def RefreshProxy():
     try:
