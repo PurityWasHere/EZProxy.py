@@ -1,5 +1,5 @@
 # EzProxyLib
-A very easy way to load and select proxies. 
+A very easy way to load and select proxies. Load proxies in 3 lines!
 
 Example for Http Proxies: 
 ```python
