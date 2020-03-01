@@ -9,7 +9,9 @@ EZProxyLib.GrabProxiesHTTP('proxies.txt')
 EZProxyLib.RefreshProxy()
 sesh = requests.get('https://Example.com',proxies = EZProxyLib.http)
 print(sesh.status_code)
+print(EZProxyLib.http)
 >>> 200
+>>> {'http': 'http://IP', 'https': 'https://IP'}
 ```
 
 Quick Usage:
