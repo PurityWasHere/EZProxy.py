@@ -1,6 +1,10 @@
 # EzProxyLib
 A very easy way to load and select proxies. Load proxies in 3 lines!
 
+<p align="center">
+  <img width="171‬" height="102" src="https://i.imgur.com/c71GUHG.png">
+</p>
+
 Example for Http Proxies: 
 ```python
 from lib import EZProxyLib
