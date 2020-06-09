@@ -19,7 +19,7 @@ Quick Usage:
 
 Step 1) Create a folder called lib in the same directory as your project
 
-Step 2) Create a file inside of the Lib folder called init.py, Place EZProxyLib.py inside
+Step 2) Create a file inside of the Lib folder called _init\_.py, Place EZProxyLib.py inside
 
 step 3) add this to the top line of your project 'from lib import EZProxyLib'
 
