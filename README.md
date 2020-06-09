@@ -5,7 +5,8 @@
 </p>
 
 A very easy way to load and select proxies. Load proxies in 3 lines!
-<p>Example for Http Proxies:</p> 
+<p>Example for Http Proxies:</p>
+
 ```python
 from lib import EZproxylib as Proxylib
 Proxylib.GrabProxiesHTTP('http_proxies.txt')
