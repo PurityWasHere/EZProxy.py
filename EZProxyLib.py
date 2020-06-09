@@ -9,7 +9,6 @@ socks4 = {'http':'socks4://' + IP,
 socks5 = {'http':'socks5://' + IP,
           'https':'socks5://' + IP}
 
-
 def GrabProxiesHTTP(ProxyPath):
     try:
         global proxyCount
@@ -22,9 +21,12 @@ def GrabProxiesHTTP(ProxyPath):
             proxyCount+=1
         return proxyCount
         return proxies
+    except FileNotFoundError:
+        print('Error Locating Proxies. Is your path correct?')
+        quit()
     except:
-        print('Error Loading Proxies. Is your proxy path correct?')
-
+        print('Error not related to path')
+        quit()
 def GrabProxiesSOCKS4(ProxyPath):
     try:
         global proxyCount
@@ -37,8 +39,12 @@ def GrabProxiesSOCKS4(ProxyPath):
             proxyCount+=1
         return proxyCount
         return proxies
+    except FileNotFoundError:
+        print('Error Locating Proxies. Is your path correct?')
+        quit()
     except:
-        print('Error Loading Proxies. Is your proxy path correct?')
+        print('Error not related to path')
+        quit()
 
 def GrabProxiesSOCKS5(ProxyPath):
     try:
@@ -52,8 +58,12 @@ def GrabProxiesSOCKS5(ProxyPath):
             proxyCount+=1
         return proxyCount
         return proxies
+    except FileNotFoundError:
+        print('Error Locating Proxies. Is your path correct?')
+        quit()
     except:
-        print('Error Loading Proxies. Is your proxy path correct?')
+        print('Error not related to path')
+        quit()
 
 def RefreshProxy():
     try:
@@ -74,3 +84,4 @@ def RefreshProxy():
         return socks5
     except:
         print('Error Refreshing Proxies. Did you run GrabProxies<Type> Before running this?')
+        quit()
