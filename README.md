@@ -7,15 +7,11 @@
 A very easy way to load and select proxies. Load proxies in 3 lines!
 Example for Http Proxies: 
 ```python
-from lib import EZProxyLib
-import requests
-EZProxyLib.GrabProxiesHTTP('proxies.txt')
-EZProxyLib.RefreshProxy()
-sesh = requests.get('https://Example.com',proxies = EZProxyLib.http)
-print(sesh.status_code)
-print(EZProxyLib.http)
->>> 200
->>> {'http': 'http://IP', 'https': 'https://IP'}
+from lib import EZproxylib as Proxylib
+Proxylib.GrabProxiesHTTP('http_proxies.txt')
+Proxylib.RefreshProxy()
+print(Proxylib.http)
+>>>{'http': 'http://xxx.xxx.xx.xx:8080', 'https': 'https://xxx.xxx.xx.xx:8080'}
 ```
 
 Quick Usage:
