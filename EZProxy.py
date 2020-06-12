@@ -19,8 +19,7 @@ def GrabProxiesHTTP(ProxyPath):
                 proxies.append(stripped)
         for line in proxies:
             proxyCount+=1
-        return proxyCount
-        return proxies
+        return proxyCount, proxies
     except FileNotFoundError:
         print('Error Locating Proxies. Is your path correct?')
         quit()
@@ -37,8 +36,7 @@ def GrabProxiesSOCKS4(ProxyPath):
                 proxies.append(stripped)
         for line in proxies:
             proxyCount+=1
-        return proxyCount
-        return proxies
+        return proxyCount, proxies
     except FileNotFoundError:
         print('Error Locating Proxies. Is your path correct?')
         quit()
@@ -56,8 +54,7 @@ def GrabProxiesSOCKS5(ProxyPath):
                 proxies.append(stripped)
         for line in proxies:
             proxyCount+=1
-        return proxyCount
-        return proxies
+        return proxyCount, proxies
     except FileNotFoundError:
         print('Error Locating Proxies. Is your path correct?')
         quit()
@@ -79,9 +76,7 @@ def RefreshProxy():
                   'https':'socks4://' + IP}
         socks5 = {'http':'socks5://' + IP,
                   'https':'socks5://' + IP}
-        return http
-        return socks4
-        return socks5
+        return http, socks4, socks5
     except:
         print('Error Refreshing Proxies. Did you run GrabProxies<Type> Before running this?')
         quit()
